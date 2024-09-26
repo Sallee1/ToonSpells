@@ -75,7 +75,7 @@ class Add_Custom_Group(Operator):
     def execute(self, context):
 
         # 追加资源
-        blend_file_path = os.path.join(dir_path, 'resources', MARLIN_TOON_SHADER_FILE_NAME)
+        blend_file_path = os.path.join(dir_path, MARLIN_TOON_SHADER_FILE_NAME)
         AppendResources.append_collection_from_blend_file(blend_file_path, "Merlin Toon Carrier 3.1(不要修改)", "Merlin Toon Carrier 3.1(不要修改)")
 
         # 查找名为“Merlin Toon Carrier 3.1(不要修改)”的集合
